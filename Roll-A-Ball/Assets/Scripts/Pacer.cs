@@ -7,9 +7,12 @@ public class Pacer : MonoBehaviour
 
     public float speed = 5.0f;
     public float zMax = 7.5f;
+    public float xMin = -7.5f; 
 
     private float zMin = -7.5f; // starting position
-    private int direction = 1; // positive to start
+    private float xMax = 7.5f; // starting position
+    private int zDirection = 1; // positive to start
+    private int xDirection = -1; // negative to start
 
     // Start is called before the first frame update
     // void Start()
@@ -20,18 +23,26 @@ public class Pacer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float zNew = transform.position.z + direction * speed * Time.deltaTime;
+        float zNew = transform.position.z + zDirection * speed * Time.deltaTime;
+        float xNew = transform.position.x + xDirection * speed * Time.deltaTime;
 
-        if (zNew >= zMax)
+        if (zNew >= zMax && xNew <= xMin)
         {
             zNew = zMax;
-            direction *= -1;
+            zDirection *= -1;
+
+            xNew = xMin;
+            xDirection *= -1;
         }
-        else if (zNew <= zMin)
-        {
+        else if (zNew <= zMin && xNew >= xMax)
+        {   
             zNew = zMin;
-            direction *= -1;
+            zDirection *= -1;
+
+            xNew = xMax;
+            xDirection *= -1;
+                    
         }
-        transform.position = new Vector3(7.5f, 0.75f, zNew);
+        transform.position = new Vector3(xNew, 0.75f, zNew);
     }
 }
