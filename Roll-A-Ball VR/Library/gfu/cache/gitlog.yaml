@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -530159753, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 3
+  lastUpdatedAtString: 2023-01-27T16:14:52.697-06:00
+  initializedAtString: 2023-01-27T15:50:13.169-06:00
+  log:
+  - commitID: 4c1e4942099343b894d9c5dccab09673bc0e07cb
+    mergeA: 
+    mergeB: 
+    authorName: VladimirTheImpaler
+    authorEmail: venturianfan098@gmail.com
+    commitEmail: venturianfan098@gmail.com
+    commitName: VladimirTheImpaler
+    summary: Revert "Initial commit"
+    description: This reverts commit 40a049b7dc870cac8a39c4c65b7633e96dc7f275.
+    timeString: 2023-01-26T23:21:21.000-06:00
+    commitTimeString: 2023-01-26T23:21:21.000-06:00
+    changes:
+    - path: .gitattributes
+      fullPath: C:\Users\Administrator\Documents\UNITY\Projects\Rollable\.gitattributes
+      projectPath: .gitattributes
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: .gitignore
+      fullPath: C:\Users\Administrator\Documents\UNITY\Projects\Rollable\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\.gitignore
+      fullPath: C:\Users\Administrator\Documents\UNITY\Projects\Rollable\Assets\.gitignore
+      projectPath: Assets\.gitignore
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+  - commitID: 40a049b7dc870cac8a39c4c65b7633e96dc7f275
+    mergeA: 
+    mergeB: 
+    authorName: VladimirTheImpaler
+    authorEmail: venturianfan098@gmail.com
+    commitEmail: venturianfan098@gmail.com
+    commitName: VladimirTheImpaler
+    summary: Initial commit
+    description: 
+    timeString: 2023-01-26T22:01:25.000-06:00
+    commitTimeString: 2023-01-26T22:01:25.000-06:00
+    changes:
+    - path: .gitattributes
+      fullPath: C:\Users\Administrator\Documents\UNITY\Projects\Rollable\.gitattributes
+      projectPath: .gitattributes
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: .gitignore
+      fullPath: C:\Users\Administrator\Documents\UNITY\Projects\Rollable\.gitignore
+      projectPath: .gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\.gitignore
+      fullPath: C:\Users\Administrator\Documents\UNITY\Projects\Rollable\Assets\.gitignore
+      projectPath: Assets\.gitignore
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
