@@ -16,13 +16,15 @@ public class PlayerController : MonoBehaviour
     private float movementY;
     private int count;
 
+    AudioSource billiard2;
+
     // Start is called before the first frame update
     void Start()
     {
+        billiard2 = GetComponent<AudioSource>();
+        
         rb = GetComponent<Rigidbody>();
-
         winTextObject.SetActive(false);
-
         SetCountText();
     }
 
@@ -53,7 +55,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Pickup")) {
+        if (other.gameObject.CompareTag("Pickup"))
+        {
+            billiard2.Play(); //Play it
             other.gameObject.SetActive(false);
 
             count = count + 1;
@@ -67,4 +71,7 @@ public class PlayerController : MonoBehaviour
     // {
         
     // }
+
+
+
 }

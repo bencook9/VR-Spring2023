@@ -5,12 +5,12 @@ using UnityEngine;
 public class Pacer : MonoBehaviour
 {
 
-    public float speed = 5.0f;
-    public float zMax = 7.5f;
-    public float xMin = -7.5f; 
+    public float speed = 10f;
+    public float zMax = -2.5f;
+    public float xMin = 10.5f;
 
-    private float zMin = -7.5f; // starting position
-    private float xMax = 7.5f; // starting position
+    private float zMin = -3.5f; // starting position
+    private float xMax = 11.5f; // starting position
     private int zDirection = 1; // positive to start
     private int xDirection = -1; // negative to start
 
